@@ -4,7 +4,7 @@ A prototype web portal for genomic information
 
 ## Prerequisites
 
-Python 2.7.8 or greater on Mac OSX.
+Python 2.7.8 or greater on Mac OSX.  Elasticsearch 2.4 OR LOWER
 
 Ensure you've installed [pip][1], [virtualenv][2], [nodejs][3], [elasticsearch][4] (Note: This has all been done for you already if you are actually taking the test)
 
