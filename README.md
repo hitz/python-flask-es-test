@@ -39,19 +39,23 @@ Public libraries for Select CSS and Sigma plugin
 
 Create a virtualenv for isolating the python dependencies:
 
-```bash
-# The prototype currently requires Python2
-virtualenv -p python2 prototype
-```
+
 ## In one terminal, start elasticsearch
 See: [Elasticsearch Docs][7] for more info
 ```bash
 elasticsearch
 ```
 
-## In a second terminal:
+## In a second terminal (the prototype currently requires Python2)
+:
 ```bash
-source prototype/bin/activate
+virtualenv -p python2 prototype
+source prototype/bin/activate (csh)
+OR
+. prototype/bin/activate
+```
+## In the repository directory 
+```bash
 make build
 make index
 make run
