@@ -1,7 +1,6 @@
 import time
 
 from worm import WormBase
-from fly import FlyBase
 
 from mod import MOD
 
