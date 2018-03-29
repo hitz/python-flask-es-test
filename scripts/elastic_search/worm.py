@@ -63,9 +63,9 @@ class WormBase(MOD):
             }
 
     def load_go(self):
-        go_data_csv_filename = "data/WormGOGeneMapping.tsv"
+        go_data_csv_filename = "data/WormGoGeneMapping.tsv"
 
-        print("Fetching go data from WormBase txt file...")
+        print("Fetching go data from WormBase tsv file...")
 
         with open(go_data_csv_filename, 'rb') as f:
             reader = csv.reader(f, delimiter='\t')
