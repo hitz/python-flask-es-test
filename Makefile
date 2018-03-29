@@ -7,7 +7,7 @@ build:
 	pip install -r requirements.txt
 
 run:
-	ES_URI=$(ES_URI) python src/server.py
+	ES_URI=$(ES_URI) python2 src/server.py
 
 run-prod:
 	PRODUCTION=true ES_URI=$(ES_URI) gunicorn src.server:app -k gevent --pid gunicorn.pid --daemon
@@ -23,7 +23,7 @@ tests: test-py
 
 index:
 	echo $(ES_URI)
-	cd scripts/elastic_search && ES_URI=$(ES_URI) python index.py
+	cd scripts/elastic_search && ES_URI=$(ES_URI) python2 index.py
 
 test-py:
 	nosetests -s
