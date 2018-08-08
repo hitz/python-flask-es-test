@@ -8,6 +8,17 @@ Python 2.7.8 or greater on Mac OSX.  Elasticsearch 2.4
 
 Ensure you've installed [pip][1], [virtualenv][2], [nodejs][3], [elasticsearch][4] (Note: This has all been done for you already if you are actually taking the test)
 
+Detailed install instructions (MacOSX):
+```
+>/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+>brew install python@2
+>brew install git
+>pip install virtualenv
+>brew cask install homebrew/cask-versions/java8
+>brew install elasticsearch@2.4
+>brew link elasticsearch@2.4
+ ```
+
 ## Background
 This application is designed to mimic a typical web programming environment in the Cherry Lab.
 The stack uses Python (Flask) as a web framework and API, Javascript (ReactJS) for the web front end, and Elasticsearch as a ~static, searchable database.  The database is designed to connect the genomes (list of genes), the functional annotations ([GO][5] terms), and disease associations for each gene from [OMIM][6].   These data are loaded and indexed into elasticsearch and results provided by the api using /api/search/ endpoint.  The system is set up to load the data from the worm C. elegans.  During the test you will be asked to extend the functionality of the software.
